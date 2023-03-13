@@ -1,0 +1,157 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    transition: all .2s;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    position: relative;
+    z-index: 1;
+    /*z-index only works when a position is defined. In this case, relative does not affect anything else. It needs to have a higher z-index, otherwise the position-absolute element would not allow the links to be pressed.*/
+}
+
+.header-items {
+    display: inline-block;
+    text-align: center;
+}
+
+.h-i {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 2px 18px;
+    padding: 0 2px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: grey;
+    transition: all .2s;
+}
+
+.h-i:hover {
+    background-color: lightgrey;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.welcome-items {
+    display: flex;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.w-i {
+    margin: 5% 5%;
+}
+
+.l-sidebar-container {
+    position: absolute;
+    top: 41px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.l-sidebar-items {
+    background: white;
+    border-radius: 4px;
+    padding: 150px 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 24px;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+}
+
+.r-sidebar-container {
+    position: absolute;
+    top: 41px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.r-sidebar-items {
+    background: white;
+    border-radius: 4px;
+    padding: 150px 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 24px;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+}
+
+.login-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.login-form {
+    margin: 10px;
+    padding: 20px 15px;
+}
+
+.login-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.login-form-items {
+    margin: 15px;
+}
+
+.login-submit {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.login-submit:hover {
+    background-color: rgb(190, 190, 190);
+    transition: background-color .2s;
+    border-radius: 4px;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 1px solid black;
+    transition: all .2s;
+}
